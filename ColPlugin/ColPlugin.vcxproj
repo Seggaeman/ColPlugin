@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="3ds Max 2012|Win32">
+      <Configuration>3ds Max 2012</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="3ds Max 2012|x64">
+      <Configuration>3ds Max 2012</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B284917D-9086-40A6-B65C-7B5E83275468}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ColPlugin</RootNamespace>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and $(VisualStudioVersion) == ''">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>ColPlugin_2010x86</TargetName>
+    <TargetExt>.dlu</TargetExt>
+    <OutDir>C:\Program Files\Autodesk\3ds max 2010\plugins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Autodesk\Autodesk 3ds Max 2011 SDK\maxsdk\x64\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>ColPlugin_2010x64</TargetName>
+    <TargetExt>.dlu</TargetExt>
+    <OutDir>..\Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Autodesk\3ds Max 2012\maxsdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Autodesk\3ds Max 2012\maxsdk\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>ColPlugin_2012x86</TargetName>
+    <TargetExt>.dlu</TargetExt>
+    <OutDir>C:\Program Files\Autodesk\3ds max 2012\plugins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Autodesk\3ds Max 2012\maxsdk\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Autodesk\3ds Max 2012\maxsdk\x64\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>ColPlugin_2012x64</TargetName>
+    <TargetExt>.dlu</TargetExt>
+    <OutDir>..\Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COLPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>acap.lib;//amodeler.lib;assetmanagement.lib;atscore.lib;biped.lib;bmm.lib;composite.lib;core.lib;crowd.lib;custdlg.lib;edmodel.lib;expr.lib;flt.lib;geom.lib;geomimp.lib;gfx.lib;gup.lib;helpsys.lib;igame.lib;imageviewers.lib;manipsys.lib;maxnet.lib;maxscrpt.lib;maxutil.lib;menuman.lib;menus.lib;mesh.lib;mnmath.lib;paramblk2.lib;particle.lib;ParticleFlow.lib;physique.lib;poly.lib;renderutil.lib;rtmax.lib;springsys.lib;tessint.lib;viewfile.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ColPlugin.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COLPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>acap.lib;//amodeler.lib;assetmanagement.lib;atscore.lib;biped.lib;bmm.lib;composite.lib;core.lib;crowd.lib;custdlg.lib;edmodel.lib;expr.lib;flt.lib;geom.lib;geomimp.lib;gfx.lib;gup.lib;helpsys.lib;igame.lib;imageviewers.lib;manipsys.lib;maxnet.lib;maxscrpt.lib;maxutil.lib;menuman.lib;menus.lib;mesh.lib;mnmath.lib;paramblk2.lib;particle.lib;ParticleFlow.lib;physique.lib;poly.lib;renderutil.lib;rtmax.lib;springsys.lib;tessint.lib;viewfile.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ColPlugin.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;COLPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Parallelization>true</Parallelization>
+      <AssemblerOutput>AssemblyCode</AssemblerOutput>
+      <InterproceduralOptimization>MultiFile</InterproceduralOptimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>acap.lib;//amodeler.lib;assetmanagement.lib;atscore.lib;biped.lib;bmm.lib;composite.lib;core.lib;crowd.lib;custdlg.lib;edmodel.lib;expr.lib;flt.lib;geom.lib;geomimp.lib;gfx.lib;gup.lib;helpsys.lib;igame.lib;imageviewers.lib;manipsys.lib;maxnet.lib;maxscrpt.lib;maxutil.lib;menuman.lib;menus.lib;mesh.lib;mnmath.lib;paramblk2.lib;particle.lib;ParticleFlow.lib;physique.lib;poly.lib;renderutil.lib;rtmax.lib;springsys.lib;tessint.lib;viewfile.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ColPlugin.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;COLPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Parallelization>true</Parallelization>
+      <AssemblerOutput>AssemblyCode</AssemblerOutput>
+      <InterproceduralOptimization>MultiFile</InterproceduralOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>acap.lib;//amodeler.lib;assetmanagement.lib;atscore.lib;biped.lib;bmm.lib;composite.lib;core.lib;crowd.lib;custdlg.lib;edmodel.lib;expr.lib;flt.lib;geom.lib;geomimp.lib;gfx.lib;gup.lib;helpsys.lib;igame.lib;imageviewers.lib;manipsys.lib;maxnet.lib;maxscrpt.lib;maxutil.lib;menuman.lib;menus.lib;mesh.lib;mnmath.lib;paramblk2.lib;particle.lib;ParticleFlow.lib;physique.lib;poly.lib;renderutil.lib;rtmax.lib;springsys.lib;tessint.lib;viewfile.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ColPlugin.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;COLPLUGIN_EXPORTS;MAX_2012;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Parallelization>true</Parallelization>
+      <AssemblerOutput>AssemblyCode</AssemblerOutput>
+      <InterproceduralOptimization>MultiFile</InterproceduralOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>acap.lib;//amodeler.lib;assetmanagement.lib;atscore.lib;biped.lib;bmm.lib;composite.lib;core.lib;crowd.lib;custdlg.lib;edmodel.lib;expr.lib;flt.lib;geom.lib;geomimp.lib;gfx.lib;gup.lib;//helpsys.lib;igame.lib;imageviewers.lib;manipsys.lib;maxnet.lib;maxscrpt.lib;maxutil.lib;menuman.lib;menus.lib;mesh.lib;mnmath.lib;paramblk2.lib;particle.lib;ParticleFlow.lib;physique.lib;poly.lib;renderutil.lib;rtmax.lib;springsys.lib;tessint.lib;viewfile.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ColPlugin.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;COLPLUGIN_EXPORTS;MAX_2012;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Parallelization>true</Parallelization>
+      <AssemblerOutput>AssemblyCode</AssemblerOutput>
+      <InterproceduralOptimization>MultiFile</InterproceduralOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>acap.lib;//amodeler.lib;assetmanagement.lib;atscore.lib;biped.lib;bmm.lib;composite.lib;core.lib;crowd.lib;custdlg.lib;edmodel.lib;expr.lib;flt.lib;geom.lib;geomimp.lib;gfx.lib;gup.lib;//helpsys.lib;igame.lib;imageviewers.lib;manipsys.lib;maxnet.lib;maxscrpt.lib;maxutil.lib;menuman.lib;menus.lib;mesh.lib;mnmath.lib;paramblk2.lib;particle.lib;ParticleFlow.lib;physique.lib;poly.lib;renderutil.lib;rtmax.lib;springsys.lib;tessint.lib;viewfile.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ColPlugin.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ColPlugin.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ColPlugin.h" />
+    <ClInclude Include="extras.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ColPlugin.cpp" />
+    <ClCompile Include="ColWorker.cpp" />
+    <ClCompile Include="DialogProc.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="extras.cpp" />
+    <ClCompile Include="HitCallback.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='3ds Max 2012|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ColPlugin.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
